@@ -3,16 +3,16 @@ def my_select(collection)
 if collection.size == 0
  	return nil
  else
-		counter = 0
+		count = 0
 		new_arr = []
-		while counter < collection.count
-			if collection[counter] % 2 == 0
-				yield collection[counter]
-				new_arr << collection[counter]
-				counter += 1
+		while count < collection.count
+			if collection[count] % 2 == 0
+				yield collection[count]
+				new_arr << collection[count]
+				count += 1
 			else
 				puts collection[counter]
-				counter += 1
+				count += 1
 			end
 		end
 		return new_arr
