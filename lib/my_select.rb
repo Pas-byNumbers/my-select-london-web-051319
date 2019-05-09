@@ -11,7 +11,7 @@ if collection.size == 0
 				new_arr << collection[count]
 				count += 1
 			else
-				puts collection[counter]
+				puts collection[count]
 				count += 1
 			end
 		end
