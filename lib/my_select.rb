@@ -8,6 +8,8 @@ def my_select(collection)
  arr << collection[count]
  if collection[count] % 2 = 0
    arr << collection[count]
+ else
+   puts collection[count]
  end
  count += 1
  end
