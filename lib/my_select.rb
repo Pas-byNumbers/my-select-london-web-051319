@@ -5,7 +5,7 @@ def my_select(collection)
  while collection.size > count
  
  arr << yield(collection[count])
- end
+ count += 1
  end
  arr
 end
