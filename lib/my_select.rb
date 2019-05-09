@@ -4,14 +4,8 @@ def my_select(collection)
  count = 0
  while collection.size > count
  
- yield(collection[count])
- arr << collection[count]
- if collection[count] % 2 = 0
-   arr << collection[count]
- else
-   puts collection[count]
+ arr << yield(collection[count])
  
- count += 1
  end
  arr
 end
