@@ -7,5 +7,5 @@ def my_select(collection)
  arr << collection[count]
  count += 1
  end
- 
+ arr
 end
