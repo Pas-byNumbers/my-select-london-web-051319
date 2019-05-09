@@ -1,6 +1,8 @@
 def my_select(collection)
  # your code here!
-
+if collection.count == 0
+ 	return nil
+ else
 		counter = 0
 		tmp_array = []
 		while counter < collection.count
@@ -11,7 +13,7 @@ def my_select(collection)
 			else
 				puts collection[counter]
 				counter += 1
-			
+			end
 		end
 		return tmp_array
  	end
